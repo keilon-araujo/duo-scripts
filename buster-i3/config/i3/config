@@ -66,6 +66,12 @@ floating_modifier Mod1
 $sup+period                  floating toggle
 $sup+comma                   focus mode_toggle
 
+# i3-gaps--------------------------------------------------------------------- #
+for_window{class="^.*"]border pixel 3
+gaps inner 4
+gaps outer 4
+
+
 # moving --------------------------------------------------------------------- #
 
 $sup+Shift+$lkey             move left
@@ -214,7 +220,7 @@ set $purple   #B48EAD
 font pango:Open Sans Semibold 10
 
 # class                  border  backgr  text       indicator  client_border
-client.focused           $black  $black  $blue      $cyan      $black
+client.focused           $black  $black  $blue      $orange    $orange
 client.unfocused         $darker $darker $darkblue  $cyan      $darker
 client.focused_inactive  $dark   $dark   $darkblue  $cyan      $dark
 client.urgent            $red    $red    $dark      $cyan      $red
@@ -237,8 +243,8 @@ bar {
             background    $dark
 
             #                   border     backgr    text
-            focused_workspace   $blue      $blue     $darker
-            active_workspace    $dark      $dark     $darkgray
+            focused_workspace   $dark      $orange   $darker
+            active_workspace    $dark      $blue     $darkgray
             inactive_workspace  $dark      $dark     $darkgray
             urgent_workspace    $red       $red      $darker
         }
