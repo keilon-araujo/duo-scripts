@@ -3,7 +3,7 @@
 # i3wm essential
 
 sudo apt install xorg \
-                 i3-wm \
+                 i3 \
                  i3blocks \
                  suckless-tools \
                  j4-dmenu-desktop \
