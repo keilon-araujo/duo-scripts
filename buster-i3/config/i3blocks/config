@@ -32,6 +32,10 @@ interval=once
 signal=11
 command=~/.config/i3blocks/keyindicator
 
+[iface]
+instace=enp0s3
+interval=10
+
 [volume]
 instance=Master
 interval=once
